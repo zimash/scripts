@@ -23,6 +23,6 @@ fi
 
 docker build . -t linux_qemu_dev
 docker run -it --rm \
-	-v $(pwd):/sources linux_qemu_dev /bin/bash \
+	-v $(pwd):/sources \
 	-u $(id -u ${USER}):$(id -g ${USER}) \
 	linux_qemu_dev /bin/bash
