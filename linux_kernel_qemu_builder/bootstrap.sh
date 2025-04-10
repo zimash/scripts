@@ -15,6 +15,12 @@ else
     git clone https://gitlab.com/qemu-project/qemu
 fi
 
+if [ -d u-boot ]; then
+    cd u-boot && git pull --rebase ; cd ..
+else
+    git clone https://source.denx.de/u-boot/u-boot
+fi
+
 docker build . -t linux_qemu_dev
 docker run -it --rm \
 	-v $(pwd):/sources linux_qemu_dev /bin/bash \
