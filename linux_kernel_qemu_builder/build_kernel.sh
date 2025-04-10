@@ -8,8 +8,8 @@ case $1 in
 		compiler=""
 		config="defconfig"
 		;;
-	riscv64)
-		arch="riscv64"
+	riscv)
+		arch="riscv"
 		compiler="riscv64-linux-gnu-"
 		config="defconfig"
 		;;
