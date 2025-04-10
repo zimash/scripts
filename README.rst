@@ -1,2 +1,6 @@
-# scripts
-Some scripts are used in the work
+=======
+scripts
+=======
+
+useful commands and batches
+===========================
