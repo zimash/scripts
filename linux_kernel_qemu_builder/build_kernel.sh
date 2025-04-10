@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd /source/linux && mkdir -p build
+cd /sources/linux && mkdir -p build
 
 case $1 in
 	x86_64)
